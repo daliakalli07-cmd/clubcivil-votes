@@ -1,0 +1,116 @@
+/* Fond particles - replaced with white background */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: #ffffff; /* white background */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* full screen */
+}
+
+/* Conteneur principal */
+.container {
+  background: rgba(255,255,255,0.95); /* mostly opaque white */
+  padding: 20px 30px;
+  border-radius: 25px;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0,0,0,0.1); /* subtle shadow */
+  color: #000; /* black text */
+}
+
+/* Titre */
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Buttons */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 12px 0;
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff4d4d, #cc0000); /* red gradient */
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(204, 0, 0, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255,77,77,0.5);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(204, 0, 0, 0.3);
+}
+
+.btn.purple {
+  grid-column: span 2;
+}
+
+/* Statistiques */
+h2 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.stats-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stat-card {
+  background: rgba(255,0,0,0.05); /* subtle red tint */
+  padding: 5px 12px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(255,0,0,0.1);
+}
+
+.stat-card span {
+  font-weight: 700;
+}
+
+.stat-card:hover {
+  transform: translateX(3px);
+  box-shadow: 0 0 20px rgba(255,0,0,0.2);
+}
+
+/* Logo */
+.logo img {
+  margin: 20px auto 0;
+  width: 100px;
+  height: 70px;
+  display: block;
+}
